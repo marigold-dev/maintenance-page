@@ -1,0 +1,677 @@
+/*LIGHT*/
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+:root {
+  --footer-color: black;
+  --background-color: white;
+  --text-color: black;
+  --border-badge-light: #6b7280;
+  --border-badge-bottom: #e5e7eb;
+  --background-badge-color: #f9fafb;
+  --border-first-button: black;
+  --content-bg: white;
+  --first-badge-button: #f5f6f8;
+  --second-badge-button: #fee2e2;
+  --second-badge-text-color: #eb3448;
+  --second-badge-button-hover: #eb3448;
+  --second-badge-text-color-hover: white;
+}
+
+[data-theme="dark"] {
+  --border-badge-light: white;
+  --footer-color: #eb3448;
+  --background-color: black;
+  --text-color: white;
+  --content-bg: #101319;
+  --background-badge-color: #1b2129;
+  --border-first-button: #1b2129;
+  --border-badge-bottom: #595959;
+  --second-badge-button: #eb3448;
+  --second-badge-button-hover: #fee2e2;
+  --second-badge-text-color: white;
+  --second-badge-text-color-hover: #eb3448;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*NAVIGATION*/
+.nav {
+  padding-right: 2;
+  padding-left: 2;
+  padding-top: 24px;
+  object-fit: contain;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: auto;
+  padding-right: auto;
+  row-gap: 200px;
+}
+
+.nav-content a {
+  display: flex;
+  margin-right: 80px;
+  padding-left: 42.57px;
+  margin-top: 1;
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  align-self: center;
+  margin-right: 0px;
+}
+
+.title-logo {
+  margin-right: auto;
+}
+
+.title-logo img {
+  padding-left: 30%;
+}
+
+.navbar-default {
+  float: right;
+  padding-right: 100px;
+  display: flex;
+}
+
+.navbar-default {
+  float: right;
+  padding-right: 60px;
+  display: flex;
+}
+
+@media (max-width: 970px) {
+  .navbar-default {
+    padding-right: 10px;
+  }
+
+  .nav-content a {
+    display: flex;
+    padding-left: 20.57px;
+    margin-top: 1;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.button-lune,
+.button-summer {
+  width: 49px;
+  height: 43px;
+  background: white;
+  padding: 8px;
+  margin-right: 8px;
+  border: solid 1px;
+  border-color: black;
+}
+
+.button-lune {
+  background-color: #eb3448;
+}
+
+.button-lune img,
+.button-summer img {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 23px;
+  height: 23px;
+}
+
+/* FOOTER */
+.footer-content {
+  background-color: var(--footer-color);
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.footer-content img {
+  margin-left: 20px;
+  width: 24px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* HEADER */
+
+.app-maintenance {
+  text-align: center;
+  padding-top: 140px;
+}
+
+.app-maintenance h1:first-of-type {
+  padding-bottom: 0;
+}
+
+.app-maintenance h1:nth-of-type(2) {
+  margin-top: 20px;
+  color: #eb3448;
+}
+
+@media screen and (max-width: 900px) {
+  .app-maintenance h1:first-of-type {
+    padding-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1550px) {
+  .head {
+    background-image: url("assets/header/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: 50% -220px;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .head {
+    background-image: url("assets/header/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: 140%;
+    background-position: 50% -70%;
+    padding-bottom: 200px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .head {
+    background-image: url("assets/header/bg-header.png");
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: 50% -23%;
+    padding-bottom: 140px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 902px) {
+  .head {
+    padding-bottom: 5px;
+  }
+}
+
+.head {
+  padding-bottom: 0%;
+}
+
+.square img {
+  position: absolute;
+  width: 15%;
+  left: 10%;
+  background: linear-gradient(180deg, #eb3448 0%, #ff543e 100%);
+  filter: blur(100px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.squareImage {
+  position: absolute;
+  width: 15%;
+  left: 10%;
+}
+
+.circle img {
+  position: absolute;
+
+  width: 15%;
+  right: 17%;
+
+  top: 50%;
+  right: 6%;
+  background: linear-gradient(180deg, #eb3448 0%, #ff543e 100%);
+  filter: blur(100px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.circleImage {
+  position: absolute;
+  object-fit: cover;
+  top: 50%;
+  width: 15%;
+  right: 6%;
+}
+
+@media screen and (max-width: 640px) and (min-width: 400px) {
+  .square img {
+    position: absolute;
+    bottom: 66%;
+    width: 60%;
+    left: -20%;
+
+    background: rgba(24, 75, 255, 0.4);
+    filter: blur(100px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .squareImage {
+    position: absolute;
+    bottom: 66%;
+    width: 40%;
+    left: -20%;
+  }
+
+  .circle img {
+    position: absolute;
+    width: 40%;
+    right: 17%;
+    left: 60%;
+    margin-top: 50%;
+    background: linear-gradient(180deg, #eb3448 0%, #ff543e 100%);
+    filter: blur(100px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .circleImage {
+    position: absolute;
+    object-position: 60px;
+    left: 60%;
+    margin-top: 50%;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .square img {
+    position: absolute;
+    bottom: 66%;
+    width: 60%;
+    left: -20%;
+
+    background: rgba(24, 75, 255, 0.4);
+    filter: blur(100px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .squareImage {
+    position: absolute;
+    bottom: 66%;
+    width: 40%;
+    left: -20%;
+  }
+
+  .circle img {
+    position: absolute;
+    width: 40%;
+    right: 17%;
+    left: 60%;
+    margin-top: 70%;
+    background: linear-gradient(180deg, #eb3448 0%, #ff543e 100%);
+    filter: blur(100px);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+
+  .circleImage {
+    position: absolute;
+    object-position: 60px;
+    left: 60%;
+    margin-top: 70%;
+    width: 40%;
+  }
+}
+
+.app-maintenance h1 {
+  font-family: "Inter";
+  font-style: black;
+  margin: 0px;
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.app-maintenance p:first-of-type {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  line-height: 150%;
+}
+
+.app-maintenance p:nth-of-type(2) {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 32px;
+}
+
+.button-explore {
+  padding-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.button-explore a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  width: 120px;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #eb3448;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .app-maintenance h1 {
+    font-family: "Inter";
+    font-style: black;
+    font-weight: 900;
+    font-size: 40px;
+  }
+
+  .app-maintenance h1:nth-of-type(2) {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .app-maintenance p:first-of-type {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .app-maintenance p:nth-of-type(2) {
+    width: 75%;
+  }
+}
+
+.head p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/*Application*/
+
+#contents {
+  display: block;
+  margin-top: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+  #contents {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 16px;
+  }
+}
+
+.first-field:hover {
+  border: solid;
+  border-color: #eb3448;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.first-field:hover .second-badge-button {
+  background-color: var(--second-badge-button-hover);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+  color: var(--second-badge-text-color-hover);
+}
+
+.first-field:hover .first-badge-button {
+  background-color: var(--first-badge-button);
+  border: solid 1px;
+  border-color: var(--border-first-button);
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.first-field:hover .first-badge-button a {
+  color: black;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.first-field:hover .second-field {
+  border-bottom: solid;
+  border-color: #eb3448;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.4s;
+}
+
+.group-badge {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 4%;
+}
+
+@media screen and (max-width: 802px) {
+  .group-badge {
+    display: grid;
+    margin: 0;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@media screen and (min-width: 1405px) and (max-width: 1500px) {
+  .title-badge {
+    position: relative;
+    right: 4%;
+  }
+}
+
+@media screen and (max-width: 1405px) and (min-width: 1000px) {
+  .group-badge {
+    justify-content: center;
+    max-width: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 4%;
+  }
+}
+
+@media screen and (max-width: 1235px) and (min-width: 802px) {
+  .group-badge {
+    justify-content: center;
+    max-width: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 4%;
+  }
+}
+
+@media screen and (max-width: 1188px) and (min-width: 802px) {
+  .group-badge {
+    justify-content: center;
+    max-width: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 4%;
+  }
+}
+
+.first-field {
+  width: 371px;
+  margin-top: 16px;
+  border: solid;
+  border-color: var(--border-badge-bottom);
+}
+
+.second-field {
+  display: flex;
+  padding: 16px;
+  background-color: var(--background-badge-color);
+  transition: ease-in-out 150;
+  border-bottom: solid;
+  border-color: var(--border-badge-bottom);
+}
+
+.second-field img {
+  border-radius: 9999px;
+  border: solid;
+  border-color: black;
+  background-color: black;
+  width: 56px;
+  height: 56px;
+}
+
+.second-field p {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.second-field a {
+  text-decoration: none;
+  color: var(--text-color) k;
+}
+
+.badge-box {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--border-badge-light);
+  transition: ease-in-out 150;
+  background-color: var(--content-bg);
+  height: 270px;
+}
+
+.pfb-button {
+  flex-direction: column;
+}
+
+.pfb-button-one {
+  display: flex;
+  margin-right: 10px;
+}
+
+.badge-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.badge-content {
+  width: 331px;
+  height: 120px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  letter-spacing: 0.005em;
+}
+
+.first-badge-button {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.005em;
+  background-color: #1b2129;
+  padding: 8px;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: 24px;
+  transition: ease-in-out 150;
+  border: solid;
+  border-color: var(--background-badge-color);
+}
+
+.first-badge-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.second-badge-button {
+  font-family: "Inter";
+  font-style: normal;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: var(--second-badge-button);
+  color: var(--second-badge-text-color);
+  margin-top: 16px;
+  padding: 8px;
+  width: 20%;
+  transition: ease-in-out 150;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.explore {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.PopularText {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15;
+  padding-top: 4px;
+  padding-bottom: 16px;
+  margin: 0%;
+}
+
+#bt-two {
+  margin-left: 2%;
+}
